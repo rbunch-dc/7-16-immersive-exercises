@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css" media="screen">
+
+	#car{
+		position: relative;
+		height: 100px;
+		width: 100px;
+	}
+
+		.wheel{
+			height: 50px;
+			width: 50px;
+			background-color: silver;
+			/* To make this a circle (instead of a square) we can use border-radius! */
+			border-radius: 50%;
+			position: absolute;
+		}
+
+		.tire{
+			height: 45px;
+			width: 45px;
+			background-color: black;
+			/* To make this a circle (instead of a square) we can use border-radius! */
+			border-radius: 50%;
+			position: absolute;
+
+		}
+
+		.wheel.one{
+			left: 20px;
+			top:90px;
+		}
+
+		.wheel.two{
+			left: 90px;
+			top:90px;
+		}
+
+		.tire.one{
+			left: 23px;
+			top:93px;
+
+		}
+
+		.tire.two{
+			left: 93px;
+			top:93px;
+
+		}
+
+		.body{
+			border-bottom: 100px solid red;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-radius:10px;
+			height: 0;
+			width: 100px;
+			position: absolute;
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="car">
+	<div class="wheel one"></div>
+	<div class="wheel two"></div>
+	<div class="tire one"></div>
+	<div class="tire two"></div>
+	<div class="body"></div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <style type="text/css" media="screen">
+    ul{
+      /* Get rid of the stupid bullet points on our list items */
+      list-style: none;
+      /* Set a background color */
+      background-color: #333; /* 333333 */
+      /* Force my bratty children to send their height up to me. */
+      overflow: hidden;
+      /* Set a position of fixed, so that, when the user scrolls, I stay visible! */
+      position: fixed;
+      /* Now that it's fixed, I need a set width!  */
+      width: 100%;
+      /* Set the starting point for our nav bar */
+      top: 0;
+      left:0;
+      /* Force the UL to star with 0 padding and 0 pixels so the Browser doesn't interfere */
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .menu-item{
+      /* Put the list items next to each other */
+      float: left;
+      /* Set the font color to white */
+      color: white;
+      /* Set the padding */
+      padding: 14px 16px;
+    }
+
+    /* Target the element with both classes, menu-item AND about */
+    .menu-item.about{
+      /* Set the bg color to greenish */
+      background-color: #4CAF50;
+      /* Float the element to the right of it's parent */
+      float: right;
+    }
+
+    /* We need to set a hover background color */
+    .menu-item:hover{
+      background-color: #777;
+    }
+
+    #content{
+      width: 50%;
+      text-align: center;
+      margin: auto;
+      height: 150vh;
+      margin-top: 46px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <ul>
+      <li class="menu-item">Home</li>
+      <li class="menu-item">News</li>
+      <li class="menu-item">Contact</li>
+      <li class="menu-item about">About</li>
+    </ul>
+  </header>
+
+  <div id="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sapiente temporibus voluptatum cum. Unde animi ducimus mollitia at quae sapiente porro corporis corrupti sed possimus ea magnam est, repellendus eius? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vitae quaerat atque doloribus, corporis quibusdam accusamus, sunt saepe provident vel assumenda? Deserunt voluptates iure doloribus vitae libero! Beatae voluptates, obcaecati.
+  </div>
+
+
+</body>
+</html>
+
+
+
+
